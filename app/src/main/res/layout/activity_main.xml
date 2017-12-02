@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_page"
+    tools:context="com.example.android.ringerapp.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/titleOffice"
+        android:text="Office Hours"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/titleOffice"
+        android:background="@color/seagreen"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/muteButton"
+        android:text="Mute On"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:background="@color/seagreen"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleStart1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/titleOffice"
+        android:text="Start Time"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleEnd1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/titleOffice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Stop Time"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/start_time1"
+        android:background="@drawable/shape_time"
+        android:textColor="@color/darkerGrey"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_alignStart="@+id/titleStart1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleStart1"
+        android:layout_marginTop="5dp"
+        android:text="9 : 00 AM" />
+
+
+
+    <TextView
+        android:id="@+id/end_time1"
+        android:background="@drawable/shape_time"
+        android:textColor="@color/darkerGrey"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/start_time1"
+        android:layout_alignEnd="@+id/titleEnd1"
+        android:text="6 : 00 PM" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/officeLevel"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/start_time1"
+        android:text="Level"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/level1"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:background="@drawable/shape"
+        android:textColor="@color/darkerGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/officeLevel"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/level1"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/titleOther"
+        android:layout_below="@+id/level1"
+        android:text="Remaining Hours"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/titleOther"
+        android:background="@color/seagreen"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleStart2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/titleOther"
+        android:text="Start Time"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleEnd2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/titleOther"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Stop Time"
+        android:textSize="17dp"/>
+
+
+
+    <TextView
+        android:id="@+id/start_time2"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:background="@drawable/shape_time"
+        android:textColor="@color/darkerGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/titleStart2"
+        android:layout_below="@+id/titleStart2"
+        android:layout_marginTop="5dp"
+        android:text="6 : 00 PM" />
+
+
+
+    <TextView
+        android:id="@+id/end_time2"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:background="@drawable/shape_time"
+        android:textColor="@color/darkerGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/start_time2"
+        android:layout_alignEnd="@+id/titleEnd2"
+        android:text="9 : 00 AM" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/otherLevel"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/start_time2"
+        android:text="Level"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/level2"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:background="@drawable/shape"
+        android:textColor="@color/darkerGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otherLevel"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textColor="@color/darkerGrey"
+        android:layout_alignBottom="@+id/level2"
+        android:id="@+id/saveButton"
+        android:layout_alignParentRight="true"
+        android:text="Save"
+        android:textSize="20sp"
+        android:background="@color/seagreen"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
